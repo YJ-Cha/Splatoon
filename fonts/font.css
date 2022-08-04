@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Splat2K';
+  src: url('Splat2K.svg#Splat2K') format('svg'),
+       url('Splat2K.ttf') format('truetype'),
+       url('Splat2K.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'splat2K';
+  src: url('splat2K.eot');
+  src: url('splat2K.eot?#iefix') format('embedded-opentype'),
+       url('splat2K.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SplatoonK';
+  src: url('SplatoonK.ttf') format('truetype'),
+       url('SplatoonK.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

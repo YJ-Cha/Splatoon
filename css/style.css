@@ -1,0 +1,569 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+@font-face {
+    font-family: 'Splat2K';
+    src: url('../fonts/Splat2K.svg#Splat2K') format('svg'),
+        url('../fonts/Splat2K.ttf') format('truetype'),
+        url('../fonts/Splat2K.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'splat2K';
+    src: url('../fonts/splat2K.eot');
+    src: url('../fonts/splat2K.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/splat2K.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SplatoonK';
+    src: url('../fonts/SplatoonK.ttf') format('truetype'),
+        url('../fonts/SplatoonK.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Splat2K', sans-serif;
+    /* font-family: 'pretendard', sans-serif;
+    font-family: 'SplatoonK'; */
+    font-size: 60px;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+}
+
+h3 {
+    font-family: 'SplatoonK';
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+.sectionBg {
+    width: 100%;
+    height: 100%;
+}
+
+/** section1 **/
+
+.s1 {
+    height: 60vw;
+}
+
+.s1Bg {
+    background: url('../images/s1/s1Main.png') no-repeat top center;
+    background-size: cover;
+    animation: scaleIn 0.5s;
+}
+
+@keyframes scaleIn {
+    0% {
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: scale(1.5) rotate(-20deg);
+        -ms-transform: scale(1.5) rotate(-20deg);
+        transform: scale(1.5) rotate(-20deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: scale(1) rotate(0);
+        -ms-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0);
+        opacity: 1;
+    }
+}
+
+/** section2 **/
+
+.s2 {
+    height: 110vw;
+}
+
+.s2Bg {
+    background: url('../images/s2/s2Bg.jpg') repeat;
+}
+
+.s2Tape {}
+
+.s2TapeWrap {}
+
+.s2TapeWrap img {
+    position: absolute;
+    width: 120%;
+    z-index: 10;
+}
+
+.s2Tape1 {
+    top: -0px;
+    left: -10%;
+    transform: rotate(5deg);
+}
+
+.s2Tape2 {
+    top: -0px;
+    left: -10%;
+    transform: rotate(-10deg);
+}
+
+.s2Tape3 {
+    transform: rotate(-2.5deg);
+    left: -10%;
+    bottom: -50px;
+}
+
+.s2Logo {
+    position: absolute;
+    top: 30vw;
+    width: 100%;
+    text-align: center;
+}
+
+.s2Logo img {
+    display: inline-block;
+    width: 435px;
+}
+
+.s2Chara {
+    padding-top: 20%;
+    display: flex;
+}
+
+.s2Chara img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.s2Chara div {
+    object-fit: contain;
+}
+
+.s2CharaL {
+    position: relative;
+    display: block;
+    flex: 1;
+}
+
+.s2CharaL>div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.charaL1 {}
+
+.charaL2 {}
+
+.charaL3 {}
+
+.charaL4 {}
+
+.s2CharaR {
+    position: relative;
+    flex: 1;
+    display: block;
+}
+
+.s2CharaR>div {
+    position: absolute;
+    width: 100%;
+    right: 0;
+}
+
+.charaR1 {}
+
+.charaR2 {}
+
+.charaR3 {}
+
+.charaR4 {}
+
+.charaR5 {}
+
+.pink {
+    color: #f02d7d;
+}
+
+.green {
+    color: #19d719;
+}
+
+.s2Desc {
+    position: relative;
+    top: 47%;
+    z-index: 10;
+    text-align: center;
+}
+
+.s2Desc h3 {
+    transform: rotate(-5deg) translateX(-10px);
+    width: 90%;
+    color: #fff;
+    font-size: 5vw;
+    padding: 30px 0 30px 100px;
+    background: url('../images/s2/s2DescBg.png') no-repeat left center / cover;
+    background-position: right;
+    text-align: left;
+}
+
+.s2Desc p {
+    padding-top: 60px;
+    color: #fff;
+    font-size: 6vw;
+}
+
+/** section3 **/
+
+.s3 {
+    height: 120vw;
+}
+
+.s3Bg {
+    background: url('../images/s3/s3Bg.png') no-repeat bottom center / cover;
+}
+
+.s3Logo {
+    width: 60%;
+    max-width: 1011px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.s3Logo img {
+    width: 100%;
+}
+
+.s3Chara {
+    width: 60%;
+    margin: auto;
+}
+
+.s3Chara img {
+    width: 100%;
+}
+
+.s3Title {
+    position: absolute;
+}
+
+.s3Desc::after {
+    position: absolute;
+    content: "";
+    top: -200px;
+    left: -150px;
+    width: 480px;
+    height: 252px;
+    background: url(../images/s3/s3Title.png) no-repeat center center / contain;
+}
+
+.s3Desc {
+    position: relative;
+    width: 70%;
+    margin: -15% auto 0;
+    color: #fff;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    text-align: center;
+    z-index: 10;
+}
+
+.s3Desc h3 {
+    font-size: 6vw;
+    margin-bottom: 20px;
+}
+
+.s3Desc p {
+    font-size: 3vw;
+    width: 70%;
+    margin: auto;
+    word-break: keep-all;
+    line-height: 1.3;
+    color: #f2432b;
+}
+
+.s3Tape {
+    position: relative;
+    width: 80%;
+    margin-top: 10px;
+    z-index: 10;
+}
+
+.s3Tape img {
+    width: 100%;
+}
+
+.s3Img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.s3Img1 {
+    position: absolute;
+    width: 60%;
+    top: 20%;
+    left: -50%;
+    opacity: 0.7;
+    transform: rotate(-10deg);
+}
+
+.s3Img2 {
+    position: absolute;
+    width: 60%;
+    top: 30%;
+    right: -50%;
+    opacity: 0.7;
+}
+
+.s3Img3 {
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    left: -10%;
+}
+
+/** section4 **/
+
+.s4 {
+    height: 150vw;
+}
+
+.s4Bg {
+    background: url(../images/s4/s4Bg.png) no-repeat bottom center / cover;
+}
+
+.s4Chara {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 5%;
+}
+
+.s4Chara img {
+    width: 100%;
+}
+
+.s4Desc1 {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    margin-bottom: 10%;
+}
+
+.s4Desc1 p {
+    position: relative;
+    top: 40%;
+    font-size: 3vw;
+}
+
+.s4Desc1 h3 {
+    position: absolute;
+    width: 100%;
+    font-size: 4vw;
+    bottom: 0;
+    line-height: 1.3;
+}
+
+.s4Desc1 h3 span {
+    color: #fff;
+    font-size: 6vw;
+}
+
+.s4Sub {
+    display: block;
+    width: 130%;
+    height: 30vw;
+    transform: rotate(-10deg) translateX(-10%);
+    overflow: hidden;
+}
+
+.s4SubBg {
+    width: 100%;
+    height: 200%;
+    background: url(../images/s4/s4Sub.png) no-repeat right center / cover;
+    transform: rotate(10deg) translateY(-30%);
+}
+
+.s4Desc2 {
+    position: absolute;
+    bottom: 10px;
+    left: 15%;
+    color: #fff;
+    font-size: 6vw;
+    text-shadow: 0 0 10px #880052;
+
+}
+
+.s4Logo {
+    position: absolute;
+    left: 10%;
+    z-index: 10;
+    width: 35%;
+}
+
+.s4Logo img {
+    width: 100%;
+}
+
+.s4Title {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -60%;
+    left: -60%;
+    z-index: -1;
+    background: url(../images/s4/s4Ink.png) no-repeat right center / contain;
+}
+
+.s4Logo p {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    z-index: 15;
+    transform: rotate(-10deg);
+    color: #fff;
+    text-shadow: 0 0 10px #ff85ce;
+    font-family: 'SplatoonK';
+    font-size: 4vw;
+}
+
+/** section5 **/
+
+.s5 {
+    margin-top: -8.5%;
+    height: 40vw;
+}
+
+.s5Bg {
+    position: relative;
+    background: url();
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); 
+}
+
+.s5Bg video {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    height: 100%;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.s5Title {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.s5Tit {
+    display: inline-block;
+    width: 50%;
+    max-width: 341px;
+}
+
+.s5Logo {
+    display: inline-block;
+    width: 70%;
+    max-width: 565px;
+}
+
+/* .s5MovieSlide {}
+
+.s5MovieSlide .swiper-slide-duplicate-active {
+    width: 50vw;
+}
+
+.slideInRight {
+    --animate-duration: 0.1s;
+} */
+
+
+/** section6 **/
+.s6 {
+    height: 170vw;
+}
+.s6Bg {
+    background: url(../images/s6/s6Bg.webp) no-repeat center center / cover;
+}
+.s6Desc {
+    text-align: center;
+    color: #fff;
+    font-size: 4vw;
+}
+.s6Desc p {
+    line-height: 1.5;
+}
+
+.s6Chara {
+    width: 70%;
+    margin: 3% auto 5%;
+}
+.s6Chara img {
+    width: 100%;
+}
+
+.s6Title {
+    position: relative;
+    margin-top: 5%;
+}
+.s6Banner {
+    width: 70%;
+    margin: auto;
+}
+.s6Banner img {
+    width: 100%;
+}
+.s6Logo {
+    position: absolute;
+    width: 40%;
+    top: -10%;
+    right: 5%;
+}
+.s6Logo img {
+    width: 100%;
+}
+.s6Tape {
+    position: absolute;
+    width: 30%;
+    right: 10%;
+    bottom: -10%;
+}
+.s6Tape img {
+    width: 100%;
+}
+.s6Desc2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/** footer **/
+
+footer {
+    height: 50px;
+    background: url(../images/sprite/footerBg.png) repeat-x top left / contain;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+}
